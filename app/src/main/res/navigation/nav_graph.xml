@@ -13,13 +13,17 @@
             android:id="@+id/action_mainFragment_to_settingsFragment"
             app:destination="@id/settingsFragment"
             app:enterAnim="@anim/slide_out_right"
-            app:popExitAnim="   @anim/slide_in_right"/>
-        <action
-            android:id="@+id/action_mainFragment_to_notePreviewFragment"
-            app:destination="@id/notePreviewFragment" />
+            app:popExitAnim="@anim/slide_in_right" />
         <action
             android:id="@+id/action_mainFragment_to_categoryFragment"
-            app:destination="@id/categoryFragment" />
+            app:destination="@id/categoryFragment"
+            app:enterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_in_right"/>
+        <action
+            android:id="@+id/action_mainFragment_to_notePreviewFragment"
+            app:destination="@id/notePreviewFragment"
+            app:enterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_in_right" />
     </fragment>
     <fragment
         android:id="@+id/notePreviewFragment"
@@ -47,7 +51,7 @@
         <action
             android:id="@+id/action_settingsFragment_to_mainFragment"
             app:destination="@id/mainFragment"
-            app:popUpToInclusive="true"
-            app:popUpTo="@id/mainFragment"/>
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
