@@ -2,6 +2,7 @@ package uz.ziyaprof.zametki.screens.main
 
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.google.android.material.tabs.TabLayout
@@ -17,6 +18,12 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
         viewPager.adapter = adapter
         setTabMargin()
         listeners()
+    }
+
+    override fun clicks() = with(binding) {
+        btnSettings.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_settingsFragment)
+        }
     }
 
     private fun listeners() = with(binding){

@@ -3,31 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     android:background="@color/app_background">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:background="@color/app_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tabIndicatorAnimationMode="elastic"
-        android:background="@color/app_background"
-        app:tabIndicatorGravity="center"
-        app:tabMode="fixed"
         app:tabGravity="center"
-        app:tabIconTint="@color/tab_icon_selector">
+        app:tabIconTint="@color/tab_icon_selector"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorGravity="center"
+        app:tabMode="fixed">
+
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:icon="@drawable/notebook_filled"/>
+            android:icon="@drawable/notebook_filled" />
+
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:icon="@drawable/checkbox_outlined"/>
+            android:icon="@drawable/checkbox_outlined" />
     </com.google.android.material.tabs.TabLayout>
+
+    <ImageView
+        android:id="@+id/btn_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tab_layout"
+        app:layout_constraintBottom_toBottomOf="@id/tab_layout"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"

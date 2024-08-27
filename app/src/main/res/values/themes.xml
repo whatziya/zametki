@@ -3,6 +3,7 @@
     <style name="Base.Theme.Заметки" parent="Theme.Material3.DayNight.NoActionBar">
          <item name="colorPrimary">@color/app_background</item>
          <item name="colorPrimaryDark">@color/app_background</item>
+         <item name="android:statusBarColor">@color/app_background</item>
     </style>
 
     <style name="Theme.Заметки" parent="Base.Theme.Заметки" />

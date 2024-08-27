@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         window.apply {
+            addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             statusBarColor = ContextCompat.getColor(this@MainActivity,R.color.app_background)
         }
     }
