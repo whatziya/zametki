@@ -84,5 +84,12 @@ dependencies {
     //Paging
     implementation(libs.androidx.paging.runtime.ktx)
 
-    implementation("com.google.devtools.ksp:symbol-processing-api:2.0.21-1.0.25")
+    implementation(libs.symbol.processing.api)
+
+    //Security
+    implementation(libs.androidx.security.crypto.ktx)
+
+    //Gson
+    implementation(libs.gson)
+
 }
