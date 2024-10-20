@@ -25,7 +25,7 @@ class TasksFragment : BaseFragment(R.layout.fragment_tasks) {
         }
 
         addTaskCard.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_notePreviewFragment)
+            //should show add task dialog
         }
 
 

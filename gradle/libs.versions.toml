@@ -1,5 +1,7 @@
 [versions]
+activityKtx = "1.9.3"
 agp = "8.7.0"
+compiler = "1.1.1"
 glide = "4.12.0"
 gson = "2.10.1"
 kotlin = "1.9.0"
@@ -21,6 +23,7 @@ viewbinding = "1.5.9"
 securityCryptoKtx = "1.1.0-alpha06"
 
 [libraries]
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleViewmodelKtx" }
@@ -45,6 +48,7 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+room-compiler = { module = "android.arch.persistence.room:compiler", version.ref = "compiler" }
 symbol-processing-api = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "symbolProcessingApi" }
 view-binding = { group = "com.github.kirich1409", name = "viewbindingpropertydelegate-full", version.ref = "viewbinding" }
 androidx-security-crypto-ktx = { group = "androidx.security", name = "security-crypto-ktx", version.ref = "securityCryptoKtx" }

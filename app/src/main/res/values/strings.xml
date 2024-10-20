@@ -4,4 +4,7 @@
     <string name="str_search_here">Search here</string>
     <string name="str_category">Category</string>
     <string name="str_add_content">Add content</string>
+    <string name="str_start_writing_here">Start writing here</string>
+    <string name="str_header">Header</string>
+    <string name="str_divider">|</string>
 </resources>

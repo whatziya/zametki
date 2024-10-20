@@ -4,6 +4,8 @@ object Constants {
     object FileName {
         const val SHARED_PREFS = "zametki"
         const val DATABASE_NAME = "zametki_database"
+        const val NOTES_TABLE = "notes_table"
+        const val TASKS_TABLE = "tasks_table"
     }
 
     object Localization {
